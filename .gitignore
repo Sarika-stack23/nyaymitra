@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# API Keys — NEVER commit these
+.env
+secrets.py
+config_local.py
+
+# Gradio
+gradio_cached_examples/
+flagged/
+
+# Whisper model cache
+~/.cache/whisper/
+
+# PDF temp files
+*.pdf
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temp
+temp/
+tmp/

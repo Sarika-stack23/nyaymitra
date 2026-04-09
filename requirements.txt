@@ -1,0 +1,34 @@
+# ============================================================
+# NyayMitra — Python Dependencies
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# AI — Groq LLM
+groq
+
+# UI — Streamlit
+streamlit
+
+# Voice — Speech to Text
+openai-whisper
+
+# Voice — Text to Speech
+gTTS
+
+# PDF Generation
+fpdf2
+
+# Language Detection
+langdetect
+
+# Translation
+deep-translator
+
+# Audio processing (required by Whisper)
+ffmpeg-python
+
+# Environment variables
+python-dotenv
+
+# Utilities
+requests

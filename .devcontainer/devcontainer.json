@@ -1,0 +1,48 @@
+{
+  "name": "NyayMitra — AI Legal Assistant",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg",
+
+  "postCreateCommand": "pip install -r requirements.txt",
+
+  "forwardPorts": [7860],
+
+  "portsAttributes": {
+    "7860": {
+      "label": "NyayMitra App",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylint",
+        "ms-python.black-formatter",
+        "njpwerner.autodocstring",
+        "PKief.material-icon-theme",
+        "GitHub.copilot"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true,
+        "editor.fontSize": 14,
+        "terminal.integrated.fontSize": 13,
+        "python.terminal.activateEnvironment": true
+      }
+    }
+  },
+
+  "remoteEnv": {
+    "GRADIO_SERVER_NAME": "0.0.0.0",
+    "GRADIO_SERVER_PORT": "7860"
+  }
+}
